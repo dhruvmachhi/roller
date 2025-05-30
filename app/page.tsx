@@ -4,7 +4,6 @@ import * as motion from "motion/react-client"
 
 export default function Home() {
   const [rolling, setRolling] = useState(false);
-  const [result, setResult] = useState(0);
   const [offset, setOffset] = useState(0);
 
   function roll() {
@@ -19,7 +18,7 @@ export default function Home() {
           setOffset(0);
         }
       } catch (err) {
-        setOffset(0);
+        setOffset(0); console.log(err)
       }
   }
 

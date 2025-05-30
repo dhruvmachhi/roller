@@ -21,7 +21,7 @@ export default function RiggerPage() {
         setResult(data.error || 'Failed to store number');
       }
     } catch (error) {
-      setResult('Network error');
+      setResult('Network error'); console.log(error)
     }
   }
 
