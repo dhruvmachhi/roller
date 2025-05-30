@@ -13,7 +13,7 @@ export default function Home() {
         const res = await fetch('/api/');
         const data = await res.json();
         if (res.ok) {
-          setOffset(4-data.number);
+          setOffset(data.number-3);
         } else {
           setOffset(0);
         }
