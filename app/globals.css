@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+.rolling {
+    animation: roll .2s infinite linear;
+}
+
+#roller-container {
+    mask-image: linear-gradient(to bottom, transparent 20%, black 50%, transparent 80%);
+}
+
+@keyframes roll {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(24px);
+    }
+}
