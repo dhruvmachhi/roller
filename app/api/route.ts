@@ -22,6 +22,7 @@ export async function GET() {
       status: 404,
     });
   }
+  console.log(storedNumber);
 
   return new Response(JSON.stringify({ number: storedNumber }), {
     status: 200,
